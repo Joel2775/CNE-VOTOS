@@ -60,3 +60,9 @@ docs/                requisitos.md y adr/
 7. Paneles y tiempo real (ADR-01)
 8. Interfaz con Uniwind, Lottie y Reanimated (ADR-06)
 9. Sentry y APK (ADR-07)
+
+## Estilo visual
+Toda la interfaz usa claymorfismo. Lee docs/estilo-claymorfismo.md antes de crear
+o cambiar cualquier pantalla o componente. Usa solo los componentes de
+src/ui/componentes y los tokens de src/ui/tema; no definas colores ni sombras
+dentro de las pantallas.

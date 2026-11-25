@@ -1,17 +1,14 @@
-import { Text, View, StyleSheet } from "react-native";
+import { Redirect } from "expo-router";
+import { obtenerGrupoInicial, useSesionStore } from "@/core/store/sesionStore";
 
 export default function Index() {
-  return (
-    <View style={styles.container}>
-      <Text>Edit src/app/index.tsx to edit this screen.</Text>
-    </View>
-  );
-}
+  const usuario = useSesionStore((estado) => estado.usuario);
+  const perfil = useSesionStore((estado) => estado.perfil);
+  const hidratado = useSesionStore((estado) => estado.hidratado);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+  if (!hidratado) {
+    return null;
+  }
+
+  return <Redirect href={obtenerGrupoInicial(usuario, perfil)} />;
+}

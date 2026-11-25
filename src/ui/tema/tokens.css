@@ -1,0 +1,14 @@
+@theme {
+  --color-fondo: #e9ecfb;
+  --color-superficie: #f4f5ff;
+  --color-texto: #25233f;
+  --color-texto-suave: #5a5878;
+  --color-primario: #5b52e6;
+  --color-primario-claro: #8b84ff;
+  --color-exito: #2e9e6b;
+  --color-error: #d64550;
+  --color-alerta: #e0a100;
+  --radius-tarjeta: 28px;
+  --radius-boton: 24px;
+  --radius-campo: 20px;
+}
